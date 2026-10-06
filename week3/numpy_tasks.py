@@ -47,9 +47,9 @@ print(np.trunc(nums))
 print("--- 7 ---")
 my_type = [("x", float), ("y", float), ("r", int), ("g", int), ("b", int)]
 points = np.zeros(3, dtype=my_type)
-points[0] = (1, 2, 255, 0, 0)    # red
-points[1] = (3, 4, 0, 255, 0)    # green
-points[2] = (5, 6, 0, 0, 255)    # blue
+points[0] = (1, 2, 255, 0, 0)
+points[1] = (3, 4, 0, 255, 0)
+points[2] = (5, 6, 0, 0, 255)
 print(points)
 
 
@@ -79,7 +79,7 @@ for i in range(100):
         dx = pts[i, 0] - pts[j, 0]
         dy = pts[i, 1] - pts[j, 1]
         dist[i, j] = np.sqrt(dx**2 + dy**2)
-print(dist[:5, :5])  # whole thing is too big to print
+print(dist[:5, :5])
 
 # 4. subtract row mean from each row
 print("--- 2.4 ---")
